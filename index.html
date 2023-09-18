@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+        CSS.supports('top: constant(a)'))
+      document.write(
+        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+    </script>
+    <title></title>
+    <!--preload-links-->
+    <!--app-context-->
+  </head>
+  <body>
+    <div id="app"><!--app-html--></div>
+	<table style="font-size: 20px;height: 100px;width: 500px;">
+		<tr >
+			<h1> 实验2</h1>
+		<td bgcolor="#d0d9e1"><a href="demos/chap2-demo-2.html">剖析三角形层次</a>
+		<td bgcolor="#c9e1ce"><a href="demos/chap2-demo-1.html">剖析线条三角形</a></td>
+		<td bgcolor="#d0d9e1"><a href="demos/chap1-demo-3.html">旋转扭曲三角形</a></td>
+		<td bgcolor="#c9e1ce"><a href="demos/chap1-demo-4.html">剖析彩色三角形</a></td>
+		<td bgcolor="#d0d9e1"><a href="demos/chap1-demo-5.html">倒转三角形</a></td>
+		
+	</tr>
+	</table>
+	
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
